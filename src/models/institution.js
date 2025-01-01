@@ -16,7 +16,7 @@ const institutionSchema = new mongoose.Schema({
   },
   sport: {
     type: String,
-    required: true
+    required: false
   },
   areaInSqMeters: {
     type: Number,
