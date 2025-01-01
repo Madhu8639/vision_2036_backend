@@ -13,12 +13,12 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://madhusudhanmahapatro:050596@m@cluster0.aolkz.mongodb.net/s3_database?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://madhusudhan:madhu265@vision-2036.uhbyi.mongodb.net/?retryWrites=true&w=majority&appName=vision-2036')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
-app.use('/', "hello world");
+
 app.use('/api/institutions', institutionRoutes);
 app.use('/api/students', studentRoutes);
 
