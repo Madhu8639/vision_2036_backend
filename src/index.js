@@ -18,6 +18,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://madhusudhanmahapatro:
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
+app.use('/', "hello world");
 app.use('/api/institutions', institutionRoutes);
 app.use('/api/students', studentRoutes);
 
