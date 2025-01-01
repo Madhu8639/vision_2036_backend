@@ -15,8 +15,8 @@ const institutionSchema = new mongoose.Schema({
     unique: true
   },
   sport: {
-    type: String,
-    required: false
+    type: [String], // Change this to an array of strings
+    required: true,
   },
   areaInSqMeters: {
     type: Number,
